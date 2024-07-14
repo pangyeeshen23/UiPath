@@ -1,0 +1,302 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1233,2416" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>RestSharp</x:String>
+      <x:String>System.Text.Json.Nodes</x:String>
+      <x:String>System.Text.Json</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>RestSharp</AssemblyReference>
+      <AssemblyReference>System.Text.Json</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="558,2351" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NApplicationCard_1</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="credentialString" />
+      <Variable x:TypeArguments="njl:JObject" Name="credentialJsonObject" />
+      <Variable x:TypeArguments="x:String" Name="email" />
+      <Variable x:TypeArguments="x:String" Name="password" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Get Credential Value" sap:VirtualizedContainerService.HintSize="496,345" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadTextFile File="{x:Null}" ContinueOnError="False" DisplayName="Read Text File" FileName="credential.json" sap:VirtualizedContainerService.HintSize="388,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_2">
+        <ui:ReadTextFile.Content>
+          <OutArgument x:TypeArguments="x:String">
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">credentialString</CSharpReference>
+          </OutArgument>
+        </ui:ReadTextFile.Content>
+      </ui:ReadTextFile>
+      <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_4">
+        <ui:DeserializeJson.JsonObject>
+          <OutArgument x:TypeArguments="njl:JObject">
+            <CSharpReference x:TypeArguments="njl:JObject" sap2010:WorkflowViewState.IdRef="CSharpReference`1_15">credentialJsonObject</CSharpReference>
+          </OutArgument>
+        </ui:DeserializeJson.JsonObject>
+        <ui:DeserializeJson.JsonString>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">credentialString</CSharpValue>
+          </InArgument>
+        </ui:DeserializeJson.JsonString>
+      </ui:DeserializeJson>
+    </Sequence>
+    <Sequence DisplayName="Assign Credential" sap:VirtualizedContainerService.HintSize="496,339" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">email</CSharpReference>
+          </OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">Convert.ToString(credentialJsonObject.SelectToken("email"))</CSharpValue>
+          </InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_3">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">password</CSharpReference>
+          </OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">Convert.ToString(credentialJsonObject.SelectToken("password"))</CSharpValue>
+          </InArgument>
+        </Assign.Value>
+      </Assign>
+    </Sequence>
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="New Tab" sap:VirtualizedContainerService.HintSize="496,1579" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="315cea3f-8186-47fa-88cd-1b49f0040b0e" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="416,1339" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:UiElement" Name="emailInput" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Email or phone'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="315cea3f-8186-47fa-88cd-1b49f0040b0e" Version="V3">
+              <uix:NClick.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">emailInput</CSharpReference>
+                </OutArgument>
+              </uix:NClick.OutUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmeet.google.com%2Flanding&amp;followup=https%3A%2F%2Fmeet.google.com%2Flanding&amp;ifkv=AdF4I77hPk6Yz4sPo053GIRYZ3cxEHXKjMEk8dYJu6ci3aMZlbeZfnckR0TYScPhtYwngOYmxuJ9VQ&amp;osid=1&amp;passive=1209600&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin&amp;dsh=S118321327%3A1720932337631185&amp;ddm=0" CVScreenId="53c34fd1-3fe7-423c-a224-13ee7e0447be" CvElementArea="713, 476, 424, 57" CvType="InputBox" DesignTimeRectangle="717, 479, 418, 52" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='identifierId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='identifierId' tag='INPUT' type='email' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="c995d0a1-0d67-499c-912b-e1a80e331a17" InformativeScreenshot="f3eaaac256d2e160f9fcb08731031fe2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in - Google Accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="53c34fd1-3fe7-423c-a224-13ee7e0447be" CvElementArea="713, 476, 424, 57" CvType="InputBox" DesignTimeRectangle="723, 469, 93, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Email or phone' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Email or phone' tag='DIV' type='' class='AxOyFc snByac' check:innerText='Email or phone' /&gt;" Guid="c296c4f5-1a7d-4963-9ef4-74028307db43" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" DisplayName="Type Into 'Email or phone'" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="315cea3f-8186-47fa-88cd-1b49f0040b0e" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmeet.google.com%2Flanding&amp;followup=https%3A%2F%2Fmeet.google.com%2Flanding&amp;ifkv=AdF4I77hPk6Yz4sPo053GIRYZ3cxEHXKjMEk8dYJu6ci3aMZlbeZfnckR0TYScPhtYwngOYmxuJ9VQ&amp;osid=1&amp;passive=1209600&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin&amp;dsh=S118321327%3A1720932337631185&amp;ddm=0" CVScreenId="ef700d1f-14fd-49a9-8ee8-af7025343816" CvElementArea="713, 476, 424, 58" CvType="InputBox" DesignTimeRectangle="717, 479, 418, 52" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='identifierId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='identifierId' tag='INPUT' type='email' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="34c60134-f2e1-4a61-b798-a589c177c93c" InformativeScreenshot="f3eaaac256d2e160f9fcb08731031fe2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in - Google Accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="ef700d1f-14fd-49a9-8ee8-af7025343816" CvElementArea="713, 476, 424, 58" CvType="InputBox" DesignTimeRectangle="723, 469, 93, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Email or phone' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Email or phone' tag='DIV' type='' class='AxOyFc snByac' check:innerText='Email or phone' /&gt;" Guid="329f0f3b-deaa-4ddb-ad7e-09fa3dfdcc7d" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">credentialJsonObject["email"].ToString()</CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="315cea3f-8186-47fa-88cd-1b49f0040b0e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmeet.google.com%2Flanding&amp;followup=https%3A%2F%2Fmeet.google.com%2Flanding&amp;ifkv=AdF4I7729DiSssk4nNJOEngDgCfhgsFrnBUwbTqYnYzF2dX6GOhSQ2Z5xNAPkyZgdXbOJXlgpFb5ZQ&amp;osid=1&amp;passive=1209600&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin&amp;dsh=S939842770%3A1720936899343415&amp;ddm=0" CVScreenId="5bbdce3b-1826-4126-b1dd-ff31bcd0c7a0" CvElementArea="1370, 685, 84, 45" CvTextArea="1396, 700, 33, 13" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1397, 697, 31, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='identifierNext' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='identifierNext' tag='SPAN' type='' class='VfPpkd-vQzf8d' aaname='Next' check:innerText='Next' /&gt;" Guid="b8339946-0d00-4734-a3c6-c72ef1ab8dd6" InformativeScreenshot="ce133d5a7a3ee512600c4895395e18b5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in - Google Accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="5bbdce3b-1826-4126-b1dd-ff31bcd0c7a0" CvElementArea="1370, 685, 84, 45" CvTextArea="1396, 700, 33, 13" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1373, 687, 79, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='identifierNext' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='identifierNext' tag='BUTTON' type='button' class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc LQeN7 BqKGqe Jskylb TrZEUc lw1w4b' aaname='Next' check:innerText='Next' /&gt;" Guid="b4402795-9ed5-41ad-9031-490e8f59b869" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Enter your password'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="315cea3f-8186-47fa-88cd-1b49f0040b0e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/challenge/pwd?TL=ALoj5AqCaAWAODcSz-5ertCBY5KIhzT0bggqxaYLIsbKg9CvcwKsDKTXluN4pMR9&amp;checkConnection=youtube%3A653&amp;checkedDomains=youtube&amp;cid=1&amp;continue=https%3A%2F%2Fmeet.google.com%2Flanding&amp;ddm=0&amp;dsh=S939842770%3A1720936899343415&amp;flowEntry=ServiceLogin&amp;flowName=GlifWebSignIn&amp;followup=https%3A%2F%2Fmeet.google.com%2Flanding&amp;ifkv=AdF4I7729DiSssk4nNJOEngDgCfhgsFrnBUwbTqYnYzF2dX6GOhSQ2Z5xNAPkyZgdXbOJXlgpFb5ZQ&amp;osid=1&amp;pstMsg=1" CVScreenId="5c82301d-c5d8-404b-91b3-7a6b985af6f2" CvElementArea="989, 524, 464, 59" CvType="InputBox" DesignTimeRectangle="994, 528, 456, 52" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="70a581dd-9aa2-4b05-8b1c-244be27f982b" InformativeScreenshot="1b4dfa86f0dc72f08b1ac93ddcd2309f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in - Google Accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="5c82301d-c5d8-404b-91b3-7a6b985af6f2" CvElementArea="989, 524, 464, 59" CvType="InputBox" DesignTimeRectangle="1000, 546, 163, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Enter your password' parentid='password' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Enter your password' parentid='password' tag='DIV' type='' class='AxOyFc snByac' check:innerText='Enter your password' /&gt;" Guid="32f07e97-0bcf-4074-8370-47abf6e1c69d" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" DisplayName="Type Into 'Enter your password'" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="315cea3f-8186-47fa-88cd-1b49f0040b0e" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/challenge/pwd?TL=ALoj5AqCaAWAODcSz-5ertCBY5KIhzT0bggqxaYLIsbKg9CvcwKsDKTXluN4pMR9&amp;checkConnection=youtube%3A653&amp;checkedDomains=youtube&amp;cid=1&amp;continue=https%3A%2F%2Fmeet.google.com%2Flanding&amp;ddm=0&amp;dsh=S939842770%3A1720936899343415&amp;flowEntry=ServiceLogin&amp;flowName=GlifWebSignIn&amp;followup=https%3A%2F%2Fmeet.google.com%2Flanding&amp;ifkv=AdF4I7729DiSssk4nNJOEngDgCfhgsFrnBUwbTqYnYzF2dX6GOhSQ2Z5xNAPkyZgdXbOJXlgpFb5ZQ&amp;osid=1&amp;pstMsg=1" CVScreenId="5c82301d-c5d8-404b-91b3-7a6b985af6f2" CvElementArea="989, 524, 464, 59" CvType="InputBox" DesignTimeRectangle="994, 528, 456, 52" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="4eed4f30-29e6-4463-9885-194651bfc34c" InformativeScreenshot="1b4dfa86f0dc72f08b1ac93ddcd2309f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in - Google Accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="5c82301d-c5d8-404b-91b3-7a6b985af6f2" CvElementArea="989, 524, 464, 59" CvType="InputBox" DesignTimeRectangle="1000, 546, 163, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Enter your password' parentid='password' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Enter your password' parentid='password' tag='DIV' type='' class='AxOyFc snByac' check:innerText='Enter your password' /&gt;" Guid="ddf3cd7e-df83-44db-b125-d24151ac8d3c" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">password</CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="315cea3f-8186-47fa-88cd-1b49f0040b0e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/challenge/pwd?TL=ALoj5AqCaAWAODcSz-5ertCBY5KIhzT0bggqxaYLIsbKg9CvcwKsDKTXluN4pMR9&amp;checkConnection=youtube%3A653&amp;checkedDomains=youtube&amp;cid=1&amp;continue=https%3A%2F%2Fmeet.google.com%2Flanding&amp;ddm=0&amp;dsh=S939842770%3A1720936899343415&amp;flowEntry=ServiceLogin&amp;flowName=GlifWebSignIn&amp;followup=https%3A%2F%2Fmeet.google.com%2Flanding&amp;ifkv=AdF4I7729DiSssk4nNJOEngDgCfhgsFrnBUwbTqYnYzF2dX6GOhSQ2Z5xNAPkyZgdXbOJXlgpFb5ZQ&amp;osid=1&amp;pstMsg=1" CVScreenId="c8bc87c1-1402-4f19-b5ed-9e34d02e7945" CvElementArea="1370, 685, 84, 45" CvTextArea="1396, 700, 33, 13" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1373, 687, 79, 40" FullSelectorArgument="&lt;webctrl isleaf='1' parentid='passwordNext' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' parentid='passwordNext' tag='DIV' type='' class='VfPpkd-Jh9lGc' aaname='' /&gt;" Guid="a8a33c4c-43da-4638-878e-4db5ab4702a4" InformativeScreenshot="ab797d19aa39b35d28cacb18386c4e4c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in - Google Accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OutUiElement>
+        <OutArgument x:TypeArguments="ui:UiElement">
+          <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">outputElement</CSharpReference>
+        </OutArgument>
+      </uix:NApplicationCard.OutUiElement>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="TzVNu5xttUGEF8VMZnYDFA" Reference="-E8TLKCH-EqF9j6caTHITA/dGjWJZm1sEuTOgtsDJ7KvQ" Selector="&lt;html title='New Tab' app='chrome.exe' /&gt;" Title="New Tab" Url="https://meet.google.com/landing">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
